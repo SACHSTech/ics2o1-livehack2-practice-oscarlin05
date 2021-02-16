@@ -12,7 +12,7 @@ side2 = int(input("Enter the length of side 2: "))
 side3 = int(input("Enter the length of side 3: "))
 
 #compute and result 
-if (side1**2) + (side2**2) == side3**2:
+if (side1**2) + (side2**2) == (side3**2) or (side1**2) + (side3**2) == (side2**2) or (side2**2) + (side3**2) == (side1**2):
   print("The triangle with side lengths " + str(side1) + ", " + str(side2) + ", " + str(side3) + ", " + str("form a right-angled triangle. "))
 else:
   print("The triangle with side lengths " + str(side1) + ", " + str(side2) + ", " + str(side3) + ", " + str("does not form a right-angled triangle. "))
